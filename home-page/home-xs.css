@@ -1,0 +1,34 @@
+/* max-width:575px */
+
+.springboard-view {
+    width: 400px !important;
+}
+
+.scalable-app-switcher-item-view {
+    margin: 10px 10px !important;
+}
+
+.icon-container {
+    text-align: center !important;
+    margin: 3px 0 !important;
+    padding: 0 !important;
+}
+
+.icon-container img {
+    width: 60% !important;
+    height: 60% !important;
+}
+
+.title-label {
+    font-size: 12px !important;
+}
+
+/* Header */
+.user-name-with-chevron {
+    margin-inline-start: 0px !important;
+}
+
+.user-name-label {
+    margin: 0 !important;
+    font-size: 13px !important;
+}

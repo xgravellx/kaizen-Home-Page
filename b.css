@@ -1,0 +1,569 @@
+@import url(/global.css);
+@import url(/home-page/home-xl.css) only screen and (min-width:1200px); /* Media XL */
+@import url(/home-page/home-l.css) only screen and (min-width:992px) and (max-width:1199px); /* Media L */
+@import url(/home-page/home-m.css) only screen and (min-width:768px) and (max-width:991px); /* Media M */
+@import url(/home-page/home-s.css) only screen and (min-width:576px) and (max-width:767px); /* Media S */
+@import url(/home-page/home-xs.css) only screen and (max-width:575px); /* Media XS */
+@import url(/home-page/home-xs-y.css) only screen and (max-height: 790px); /* Media xs dikey */
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: ltr; /* Soldan sağa yazma */
+    overflow-x: hidden; /* x ekseninde taşma olmayacak */
+    overflow-y: hidden; /* y de taşma olursa scroll çıkacak */
+
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: var(--cs-bg-white);
+
+    font-family: 'Inter', sans-serif;
+    color: var(--cs-text-default);
+
+    line-height: 1.5; /* Satır Yüksekliği */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cw-pane-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.root-view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------- HEADER -------------------------------------------------------- */
+#header {
+    /* Layout */
+
+    align-items: center;
+    block-size: 44px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 44px;
+    left: 0;
+    margin: 0;
+    min-block-size: 44px;
+    min-height: 44px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Other */
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+    text-rendering: optimizeLegibility;
+
+    background-color: #323232;
+}
+
+/* -------------------- HEADER LOGO -------------------- */
+.header-logo {
+    display: flex;
+    position: relative;
+
+    block-size: 44px;
+    align-items: center;
+    flex-basis: 0%;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+
+    font-size: 18px;
+    font-weight: 300px;
+
+    height: 44px;
+
+    justify-content: flex-start;
+
+    letter-spacing: normal;
+    line-height: 21.6px;
+
+    margin-bottom: 0;
+    margin-inline-start: 16px;
+    margin-left: 16px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    user-select: none;
+
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+
+}
+
+/* -------------------- HEADER LOGO- SOL BUTTON-------------------- */
+.icon-button {
+    /* Layout */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    inline-size: 30px;
+    margin: 0 0 0 2px;
+    padding: 0;
+    width: 30px;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Animation */
+    transition-duration: 0s;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    margin-inline-start: 2px;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+
+}
+
+/* -------------------- HEADER LOGO- SOL BUTTON SVG-------------------- */
+.icon-button svg {
+    /* Layout */
+    height: 44px;
+    inline-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 16px;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+/* -------------------- HEADER USER -------------------- */
+.header-name {
+    /* Layout */
+    align-items: center;
+    block-size: 44px;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    height: 44px;
+    justify-content: flex-end;
+    margin: 0px 16px 0px 0px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    margin-inline-start: 0px;
+    margin-inline-end: 16px;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: end;
+
+}
+
+.user-name-with-chevron {
+    /* Layout */
+    align-items: center;
+    display: flex;
+    height: 44px;
+    justify-content: flex-end;
+    margin: 1px 0px 0px 0px;
+    overflow: hidden;
+    padding: 0px 0px 0px 8px;
+    position: relative;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    margin-block-start: 1px;
+    margin-inline-start: 8px;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+}
+
+.user-photo-icon-view {
+    /* Layout */
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    
+}
+
+.photo-icon {
+     /* Layout */
+     display: block;
+     margin: 5px;
+     overflow: hidden;
+     padding: 0;
+     width: 24px;
+     height: 24px;
+ 
+     /* Text */
+     font-family: 'Inter', sans-serif;
+     font-size: 18px;
+     font-weight: 300;
+     letter-spacing: normal;
+     line-height: 21.6px;
+     text-size-adjust: 100%;
+ 
+     /* Appearance */
+     cursor: pointer;
+     background-position-x: 0px;
+     background-position-y: 0px;
+     background-repeat: no-repeat;
+     background-size: 0px 0px;
+ 
+     /* Other */
+     text-rendering: optimizeLegibility;
+     user-select: none;
+     -webkit-box-direction: normal;
+}
+
+.empty-avatar {
+    /* Layout */
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+.empty-avatar span {
+    /* Layout */
+    display: block;
+    block-size: 100%;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+.empty-avatar span svg {
+    /* Layout */
+    display: block;
+    block-size: 100%;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+    fill: var(--cs-bg-white);
+}
+
+.user-label-container {
+    /* Layout */
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+.user-name-label {
+    /* Layout */
+    display: block;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 22.8px;
+    text-size-adjust: 100%;
+    white-space: nowrap;
+
+    /* Appearance */
+    cursor: pointer;
+    color: var(--cs-bg-white);
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+.chevron-view {
+    /* Layout */
+    display: flex;
+    block-size: 6px;
+    height: 6px;
+    inline-size: 10px;
+    margin: -1px 0 0 0;
+    padding: 0 0 0 4px;
+    width: 10px;
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+    margin-block-start: -1px;
+    padding-inline-start: 4px;
+}
+
+
+/* -------------------------------------------------------- MAIN -------------------------------------------------------- */
+.main {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.springboard-view {
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    block-size: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 1100px;
+    justify-content: center;
+    align-items: center;
+
+
+    /* Text */
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    text-size-adjust: 100%;
+
+    /* others */
+    text-rendering: optimizeLegibility;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+}
+
+.scalable-app-switcher-item-view {
+    margin: 20px 40px;
+}
+
+   
+.icon-container {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.icon-container img {
+    transition: box-shadow ;
+    border-radius: 32px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.icon-container img:hover {
+    border-radius: 32px;
+    -webkit-box-shadow: 1px 1px 10px -2px rgba(32, 32, 32, 0.86);
+    -moz-box-shadow: 1px 1px 10px -2px rgba(32, 32, 32, 0.86);
+    box-shadow: 1px 1px 10px -2px rgba(32, 32, 32, 0.86);
+
+}
+
+.title-label {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+    user-select: none;
+}
+
+    

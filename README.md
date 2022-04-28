@@ -1,0 +1,3 @@
+# Kaizen Management Software Homepage
+
+

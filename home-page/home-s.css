@@ -1,0 +1,22 @@
+/* (min-width:576px) and (max-width:767px) */
+
+.springboard-view {
+    width: 600px !important;
+}
+
+.scalable-app-switcher-item-view {
+    margin: 5px 5px !important;
+}
+
+.icon-container {
+    text-align: center !important;
+}
+
+.icon-container img {
+    width: 70% !important;
+    height: 70% !important;
+}
+
+.title-label {
+    font-size: 14px !important;
+}
